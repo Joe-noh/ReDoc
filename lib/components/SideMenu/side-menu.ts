@@ -120,6 +120,10 @@ export class SideMenu extends BaseComponent implements OnInit, OnDestroy {
     }
   }
 
+  trackByMethodSummary(method, idx) {
+    return method.summary;
+  }
+
   destroy() {
     this.scrollService.unbind();
     this.menuService.destroy();
